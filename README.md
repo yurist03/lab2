@@ -27,13 +27,14 @@
       #include <stdio.h>
       #include <locale.h>
 
+	  const float price = 500;
+	  const float length = 3;
+	  const float width = 0.8;
+
       int main() {
 
 	      setlocale(LC_CTYPE, "");
 
-	      const float price = 500;
-	      const float length = 3;
-	      const float width = 0.8;
 	      float area, cost;
 
 	      area = width * length;
