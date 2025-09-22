@@ -1,17 +1,22 @@
-﻿#include <stdio.h>
+#include <stdio.h>
 #include <locale.h>
+
+const float price = 500;
+const float length = 3;
+const float width = 0.8;
 
 int main() {
 
 	setlocale(LC_CTYPE, "");
 
-	int price = 20;
-	int width = 20;
-	int length = 80;
+	float area, cost;
 
-	printf("Стоимость 1 кв метра: %d рублей\n", price);
-	printf("Ширина ткани: %d м., Длинна ткани: %d м.\n", width, length);
-	printf("Площадь ткани: %d кв. метров.\n", width * length);
-	printf("Стоимость всей ткани: %d рублей\n", width * length * price);
+	area = width * length;
+	cost = area * price;
+
+	printf("Стоимость 1 кв метра: %.0f рублей\n", price);
+	printf("Ширина ткани: %.1f м., Длинна ткани: %.0f м.\n", width, length);
+	printf("Площадь ткани: %.1f кв.м.\n", area);
+	printf("Стоимость всей ткани: %.0f рублей\n", cost);
 
 }
