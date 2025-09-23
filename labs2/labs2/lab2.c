@@ -1,15 +1,16 @@
 #include <stdio.h>
 #include <locale.h>
 
-const float price = 500;
-const float length = 3;
-const float width = 0.8;
-
 int main() {
 
 	setlocale(LC_CTYPE, "");
 
 	float area, cost;
+
+	float price = 500;
+	float length = 3;
+	float width = 0.8;
+
 
 	area = width * length;
 	cost = area * price;
@@ -20,3 +21,4 @@ int main() {
 	printf("Стоимость всей ткани: %.0f рублей\n", cost);
 
 }
+
